@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Development Processes Course</title>
+    <link rel="shortcut icon" href="./favicon.ico"/>
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/night.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+# CI/CD Introduction
+<!-- .slide: data-background="images/slides-headline-background.jpg" -->
+</script></section><section  data-markdown><script type="text/template">
+
+## What is CI/CD
+
+CI/CD means Continous Integration / Continuous Delivery
+
+- CI/CD is a fundamental concept in software development<!-- .element: class="fragment" -->
+  - Continuous Integration<!-- .element: class="fragment" -->
+  - Continuous delivery<!-- .element: class="fragment" -->
+  - Continuous deployment<!-- .element: class="fragment" -->
+
+![CI-CD pipeline example](images/ci-cd-pipeline.jpg)
+<!-- .element: class="fragment" -->
+</script></section><section  data-markdown><script type="text/template">
+
+## Continuous Integration
+
+>The practice of automatically building and unit
+testing an entire application frequently, ideally on
+every source code check-in<!-- .element: class="fragment" -->
+
+</script></section><section  data-markdown><script type="text/template">
+
+## Continuous Delivery
+
+>The practice of deploying every build to a
+production-like environment and performing
+automated integration and acceptance testing
+
+</script></section><section  data-markdown><script type="text/template">
+
+## Continuous Deployment
+
+>The practice of automatically deploying every build
+to production after it passes its automated tests
+
+</script></section><section  data-markdown><script type="text/template">
+
+- automated approaches to produce applications efficiently and reliably
+- often described as a pipeline - flow of code and artifacts through build steps
+- many CI/CD Tools available
+  - [Jenkins](https://www.jenkins.io/)
+  - [Bitbucket Pipelines](https://bitbucket.org/product/de/features/pipelines)
+  - [GitLab CI/CD pipelines](https://docs.gitlab.com/ee/ci/pipelines/)
+  - [GitHub Actions](https://github.com/actions)
+  - [Travis CI](https://travis-ci.org/)
+  - and many more
+
+</script></section><section  data-markdown><script type="text/template">
+
+## Github Actions
+
+- We'll use Github Action because...<!-- .element: class="fragment" -->
+  - well, we work on Github <!-- .element: class="fragment" -->
+- Github Actions use YAML files <!-- .element: class="fragment" -->
+- .yml or .yaml extension<!-- .element: class="fragment" -->
+
+</script></section><section  data-markdown><script type="text/template">
+
+## Github Actions 
+
+**HELLO WORLD** Example
+
+- Open your repository and goto **Actions**
+  
+![actions-01](images/actions-01.jpg)<!-- .element: class="fragment" -->
+</script></section><section  data-markdown><script type="text/template">
+![actions-01](images/actions-02.jpg)
+
+</script></section><section  data-markdown><script type="text/template">
+
+- Here we are: 
+![actions-01](images/actions-03.jpg)<!-- .element: class="fragment" -->
+</script></section><section  data-markdown><script type="text/template">
+- Now commit it and look up in action tab how it runs
+![actions-01](images/actions-04.jpg)<!-- .element: class="fragment" -->
+</script></section><section  data-markdown><script type="text/template">
+- Now click the details to see what happens
+![actions-01](images/actions-05.jpg)<!-- .element: class="fragment" -->
+</script></section><section  data-markdown><script type="text/template">
+The output is simply: Hello World!!!
+
+![actions-01](images/actions-06.jpg)
+
+To learn more: 
+- [GitHub Actions: Hello World | GitHub Learning Lab](https://lab.github.com/githubtraining/github-actions:-hello-world)
+
+</script></section><section  data-markdown><script type="text/template">
+
+## Exercise
+
+- Together with your Group:<!-- .element: class="fragment" -->
+  - On your PRJ2 repository activate github actions and let your application(s) BUILD<!-- .element: class="fragment" -->
+  - Hint start with Maven Java build template<!-- .element: class="fragment" -->
+  - Then adapt it for your needs (e.g. your pom file is located somewhere else -> /implementation)<!-- .element: class="fragment" --></script></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"transition":"concave","transition-speed":"fast","slideNumber":true,"history":true,"progress":true,"width":1248,"height":800,"parallaxBackgroundImage":"images/fontys-parallax-all-dark.jpg","parallaxBackgroundSize":"2100px 1024px"}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
