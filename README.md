@@ -2,7 +2,7 @@
 title: "Development Processes Course"
 subtitle: "CI/CD introduction"
 author: [Stefan Sobek]
-date: "2020-05-18"
+date: "2021-05-26"
 subject: "Development Processes"
 keywords: [Fontys, Agile, CI-CD]
 lang: "en"
@@ -11,19 +11,20 @@ logo: "images/fontyslogo.png"
 titlepage-rule-color: "400070"
 page-background : "images/fontyslogo-background.png"
 # reveal settings
-theme: simple
+theme: night
 separator: <!-- s -->
 verticalSeparator: <!-- v -->
+notesSeparator: <!-- n -->
 revealOptions:
   # None - Fade - Slide - Convex - Concave - Zoom
-  transition: 'slide'
+  transition: 'concave'
   transition-speed: fast
   slideNumber: true
   history: true
   progress: true
   width: 1248
   height: 800
-  parallaxBackgroundImage: 'images/fontys-parallax-all.jpg'
+  parallaxBackgroundImage: 'images/fontys-parallax-all-dark.jpg'
   parallaxBackgroundSize: '2100px 1024px'
   #autoSlide: 4000
   #loop: true
