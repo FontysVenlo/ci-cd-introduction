@@ -42,12 +42,35 @@ revealOptions:
 CI/CD means Continous Integration / Continuous Delivery
 
 - CI/CD is a fundamental concept in software development<!-- .element: class="fragment" -->
-  - Continuous integration<!-- .element: class="fragment" -->
-  - continuous delivery<!-- .element: class="fragment" -->
-  - continuous deployment<!-- .element: class="fragment" -->
+  - Continuous Integration<!-- .element: class="fragment" -->
+  - Continuous delivery<!-- .element: class="fragment" -->
+  - Continuous deployment<!-- .element: class="fragment" -->
 
 ![CI-CD pipeline example](images/ci-cd-pipeline.jpg)
 <!-- .element: class="fragment" -->
+<!-- s -->
+
+## Continuous Integration
+
+>The practice of automatically building and unit
+testing an entire application frequently, ideally on
+every source code check-in<!-- .element: class="fragment" -->
+
+<!-- s -->
+
+## Continuous Delivery
+
+>The practice of deploying every build to a
+production-like environment and performing
+automated integration and acceptance testing
+
+<!-- s -->
+
+## Continuous Deployment
+
+>The practice of automatically deploying every build
+to production after it passes its automated tests
+
 <!-- s -->
 
 - automated approaches to produce applications efficiently and reliably
@@ -101,7 +124,7 @@ To learn more:
 
 <!-- s -->
 
-## Assignment
+## Exercise
 
 - Together with your Group:<!-- .element: class="fragment" -->
   - On your PRJ2 repository activate github actions and let your application(s) BUILD<!-- .element: class="fragment" -->
