@@ -39,15 +39,16 @@ revealOptions:
 
 ## What is CI/CD
 
-CI/CD means Continous Integration / Continuous Delivery
+CI/CD means Continous Integration / Continuous Delivery<!-- .element: class="fragment" -->
 
 - CI/CD is a fundamental concept in software development<!-- .element: class="fragment" -->
   - Continuous Integration<!-- .element: class="fragment" -->
-  - Continuous delivery<!-- .element: class="fragment" -->
-  - Continuous deployment<!-- .element: class="fragment" -->
+  - Continuous Delivery<!-- .element: class="fragment" -->
+  - Continuous Deployment<!-- .element: class="fragment" -->
 
 ![CI-CD pipeline example](images/ci-cd-pipeline.jpg)
 <!-- .element: class="fragment" -->
+
 <!-- s -->
 
 ## Continuous Integration
@@ -62,14 +63,20 @@ every source code check-in<!-- .element: class="fragment" -->
 
 >The practice of deploying every build to a
 production-like environment and performing
-automated integration and acceptance testing
+automated integration and acceptance testing<!-- .element: class="fragment" -->
 
 <!-- s -->
 
 ## Continuous Deployment
 
 >The practice of automatically deploying every build
-to production after it passes its automated tests
+to production after it passes its automated tests<!-- .element: class="fragment" -->
+
+<!-- n -->
+
+Generally with CI/CD Continuous Integration / Continuous Delivery is meant. Continuous Delivery and Continuous Deployment are similar and are very often interchanged. 
+However the grade of automation if different.
+Continuous Delivery means that usually changes are tested/accepted and release to a specific release repository or production like environment whereas Continuous Deployment really means that after automatic testing and acceptance testing it is deployed to the production system and in use. 
 
 <!-- s -->
 
@@ -94,7 +101,7 @@ to production after it passes its automated tests
 
 <!-- s -->
 
-## Github Actions 
+## Github Actions
 
 **HELLO WORLD** Example
 
